@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Cart - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen pb-24">
+      <!-- Top Area Start -->
+      <div class="flex justify-start items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./home.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">Cart (5)</div>
+      </div>
+      <!-- Top Area End -->
+
+      <!-- Your Order Section Start -->
+      <div class="pt-4 px-4">
+        <div class="flex flex-col gap-4 pt-4">
+          <div
+            class="p-4 rounded-xl border border-g30 flex justify-start items-center gap-4"
+          >
+            <div class="rounded-lg overflow-hidden">
+              <img
+                src="./assets/images/product-img-1.png"
+                class="w-28"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-center">
+                <p class="text-sm font-medium text-g60">Blue Finger Watch</p>
+                <div class="relative cartItemModal">
+                  <button class="">
+                    <i
+                      class="ph-bold ph-dots-three-vertical text-g60 text-lg"
+                    ></i>
+                  </button>
+
+                  <div
+                    class="text-xs text-g50 absolute top-7 right-0 bg-white py-3 px-4 rounded-md shadow-2 w-[140px] cartItemModalBox duration-500 modalClose cursor-pointer"
+                  >
+                    <button class="pb-2 editModalOpen1">
+                      <i class="ph ph-x"></i> Edit Item
+                    </button>
+                    <p class="pt-2 border-t border-g30">
+                      <i class="ph-fill ph-trash"></i> Remove Item
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-g50 text-xs pt-1">Size : L</p>
+              <p
+                class="text-g50 text-xs flex justify-start items-center gap-2 pt-1"
+              >
+                Color : Black
+                <span class="w-2.5 h-2.5 rounded-full bg-g60 block"></span>
+              </p>
+              <p class="text-g50 text-xs pt-1">Qty : 1</p>
+              <div
+                class="flex justify-start items-center gap-2 pt-2 text-sm pb-2"
+              >
+                <p class="text-g60 font-semibold">$116.00</p>
+                <p class="text-g40 line-through font-semibold">$156.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 pt-4">
+          <div
+            class="p-4 rounded-xl border border-g30 flex justify-start items-center gap-4"
+          >
+            <div class="rounded-lg overflow-hidden">
+              <img
+                src="./assets/images/product-img-2.png"
+                class="w-28"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-center">
+                <p class="text-sm font-medium text-g60">Gildan Bluetooth</p>
+                <div class="relative cartItemModal2">
+                  <button class="">
+                    <i
+                      class="ph-bold ph-dots-three-vertical text-g60 text-lg"
+                    ></i>
+                  </button>
+
+                  <div
+                    class="text-xs text-g50 absolute top-7 right-0 bg-white py-3 px-4 rounded-md shadow-2 w-[140px] cartItemModalBox2 duration-500 modalClose cursor-pointer"
+                  >
+                    <button class="pb-2 editModalOpen2">
+                      <i class="ph ph-x"></i> Edit Item
+                    </button>
+                    <p class="pt-2 border-t border-g30">
+                      <i class="ph-fill ph-trash"></i> Remove Item
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-g50 text-xs pt-1">Size : L</p>
+              <p
+                class="text-g50 text-xs flex justify-start items-center gap-2 pt-1"
+              >
+                Color : Black
+                <span class="w-2.5 h-2.5 rounded-full bg-g60 block"></span>
+              </p>
+              <p class="text-g50 text-xs pt-1">Qty : 1</p>
+              <div
+                class="flex justify-start items-center gap-2 pt-2 text-sm pb-2"
+              >
+                <p class="text-g60 font-semibold">$116.00</p>
+                <p class="text-g40 line-through font-semibold">$156.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 pt-4">
+          <div
+            class="p-4 rounded-xl border border-g30 flex justify-start items-center gap-4"
+          >
+            <div class="rounded-lg overflow-hidden">
+              <img
+                src="./assets/images/product-img-3.png"
+                class="w-28"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-center">
+                <p class="text-sm font-medium text-g60">Daily Cream</p>
+                <div class="relative cartItemModal3">
+                  <button class="">
+                    <i
+                      class="ph-bold ph-dots-three-vertical text-g60 text-lg"
+                    ></i>
+                  </button>
+
+                  <div
+                    class="text-xs text-g50 absolute top-7 right-0 bg-white py-3 px-4 rounded-md shadow-2 w-[140px] cartItemModalBox3 duration-500 modalClose cursor-pointer"
+                  >
+                    <button class="pb-2 editModalOpen">
+                      <i class="ph ph-x"></i> Edit Item
+                    </button>
+                    <p class="pt-2 border-t border-g30">
+                      <i class="ph-fill ph-trash"></i> Remove Item
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-g50 text-xs pt-1">Size : L</p>
+              <p
+                class="text-g50 text-xs flex justify-start items-center gap-2 pt-1"
+              >
+                Color : Black
+                <span class="w-2.5 h-2.5 rounded-full bg-g60 block"></span>
+              </p>
+              <p class="text-g50 text-xs pt-1">Qty : 1</p>
+              <div
+                class="flex justify-start items-center gap-2 pt-2 text-sm pb-2"
+              >
+                <p class="text-g60 font-semibold">$116.00</p>
+                <p class="text-g40 line-through font-semibold">$156.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Your Order Section End -->
+
+      <div class="flex justify-between items-center gap-3 px-4 pt-6">
+        <div class="w-full">
+          <a href="./checkout.html" class="primaryButton">
+            Checkout (5)-$445.00
+          </a>
+        </div>
+      </div>
+
+      <!-- Edit Product Modal Start -->
+      <div
+        class="bg-black bg-opacity-40 hidden !justify-end !items-end z-10 max-w-[430px] mx-auto editModal"
+      >
+        <div class="px-4 pt-2 pb-6 rounded-t-2xl bg-white w-full">
+          <div
+            class="flex justify-center items-center flex-col border-b border-dashed border-g30"
+          >
+            <div class="w-14 h-1 bg-g30 rounded-lg"></div>
+            <h2 class="text-xl font-semibold text-g60 text-center py-3">
+              Edit Product Variant
+            </h2>
+          </div>
+
+          <div class="pt-8">
+            <div class="flex flex-col gap-4 pt-4">
+              <div
+                class="p-4 rounded-xl border border-g30 flex justify-start items-center gap-4"
+              >
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="./assets/images/product-img-1.png"
+                    class="w-28 h-36"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <p class="text-sm font-medium text-g60">
+                    Estelle Novelty Crossbody
+                  </p>
+                  <p class="text-g50 text-xs pt-1">Stock : 160</p>
+
+                  <div
+                    class="flex justify-start items-center gap-2 pt-2 text-sm pb-2"
+                  >
+                    <p class="text-g60 font-semibold">$116.00</p>
+                    <p class="text-g40 line-through font-semibold">$156.00</p>
+                  </div>
+                  <div
+                    class="border border-g30 bg-g30 bg-opacity-40 py-1 px-3 flex justify-start items-center gap-2 w-fit rounded-md text-sm"
+                  >
+                    <button><i class="ph ph-minus block"></i></button>
+                    <input
+                      type="text"
+                      class="bg-transparent outline-none w-6 text-center"
+                      value="1"
+                    />
+                    <button><i class="ph ph-plus block"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex justify-between items-center">
+              <p class="text-g60 font-semibold">Size</p>
+            </div>
+            <ul
+              class="flex justify-start items-center flex-wrap text-base font-medium gap-3 pb-2 horizontal-slide pt-3"
+            >
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g60 text-white">
+                XXS
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                XS
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                S
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                M
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                L
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                XL
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                XXL
+              </li>
+              <li class="cursor-pointer py-2 px-3 rounded-md bg-g20 text-g50">
+                3XL
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex justify-between items-center">
+              <p class="text-g60 font-semibold">Color</p>
+            </div>
+            <ul
+              class="flex justify-start items-center flex-wrap text-base font-medium gap-3 pb-2 horizontal-slide pt-3"
+            >
+              <li class="cursor-pointer border-2 border-g60 p-px rounded-md">
+                <div class="w-12 h-8 rounded-md bg-g60 text-white"></div>
+              </li>
+              <li class="cursor-pointer border-2 border-white p-px rounded-md">
+                <div class="w-12 h-8 rounded-md bg-green-500 text-white"></div>
+              </li>
+              <li class="cursor-pointer border-2 border-white p-px rounded-md">
+                <div class="w-12 h-8 rounded-md bg-red-400 text-white"></div>
+              </li>
+              <li class="cursor-pointer border-2 border-white p-px rounded-md">
+                <div class="w-12 h-8 rounded-md bg-yellow-500 text-white"></div>
+              </li>
+              <li class="cursor-pointer border-2 border-white p-px rounded-md">
+                <div class="w-12 h-8 rounded-md bg-sky-500 text-white"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex justify-between items-center gap-3 editModalClose">
+            <div class="w-full">
+              <a href="./checkout.html" class="primaryButton"> Confirm </a>
+            </div>
+            <div class="w-full">
+              <a class="primaryButtonOutline"> Cancel </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Edit Product Modal End -->
+
+      <!-- bottom tab menu start -->
+      <div class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto">
+        <div
+          class="flex justify-between items-center gap-3 text-white bg-g60 rounded-t-2xl p-4"
+        >
+          <a
+            href="./home.html"
+            class="flex flex-col justify-center items-center cursor-pointer"
+          >
+            <i class="ph ph-house text-2xl"></i>
+            <p class="font-semibold text-xs">Home</p>
+          </a>
+          <a
+            href="./wishlist.html"
+            class="flex flex-col justify-center items-center cursor-pointer"
+          >
+            <i class="ph ph-heart-straight text-2xl"></i>
+            <p class="font-semibold text-xs">Wishlist</p>
+          </a>
+          <a
+            href="./my-order.html"
+            class="flex flex-col justify-center items-center cursor-pointer"
+          >
+            <i class="ph ph-file-text text-2xl"></i>
+            <p class="font-semibold text-xs">My Order</p>
+          </a>
+          <a
+            href="./cart.html"
+            class="flex flex-col justify-center items-center cursor-pointer"
+          >
+            <i class="ph-fill ph-shopping-cart text-2xl"></i>
+            <p class="font-semibold text-xs">Cart</p>
+          </a>
+          <a
+            href="./account-settings.html"
+            class="flex flex-col justify-center items-center cursor-pointer"
+          >
+            <i class="ph ph-user text-2xl"></i>
+            <p class="font-semibold text-xs">Profile</p>
+          </a>
+        </div>
+      </div>
+      <!-- bottom tab menu end -->
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

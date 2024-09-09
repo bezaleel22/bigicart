@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Sign In - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen">
+      <div class="text-center pt-8 px-6">
+        <h1 class="heading-1 font-semibold text-g60">Sign In</h1>
+        <p class="text-sm text-g50 pt-3">
+          Stay connected, follow teams, and never miss thrilling Stay connected
+        </p>
+      </div>
+
+      <form class="pt-8 flex flex-col gap-4 px-6">
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Email</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Enter Email"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Password</p>
+          <div
+            class="p-4 rounded-xl bg-g20 border border-g30 flex justify-between items-center"
+          >
+            <input
+              type="password"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm passwordField w-full pr-3"
+              placeholder="******"
+            />
+            <p class="">
+              <i class="ph ph-eye-closed text-g60 passowordShow"></i>
+            </p>
+          </div>
+          <div class="flex justify-between items-center pt-3">
+            <div class="">
+              <label
+                class="checkbox style-c relative pl-6 cursor-pointer select-none flex justify-start items-center"
+              >
+                <input
+                  type="checkbox"
+                  class="absolute opacity-0 cursor-pointer h-0 w-0"
+                />
+                <span
+                  class="checkbox__checkmark absolute top-0.5 left-0 h-4 w-4 border bg-r50 border-r75 rounded after:absolute after:left-[5px] after:top-[0px] after:w-[5px] after:h-[12px] after:border-t-0 after:border-r-[2px] after:border-b-[2px] after:border-l-0 after:rotate-45 after:opacity-0 after:duration-500"
+                ></span>
+                <span class="text-sm font-medium text-g60"
+                  >Remember Password</span
+                >
+              </label>
+            </div>
+            <div class="text-sm font-medium text-g60">
+              <a href="./forget-password.html">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <a href="./home.html" class="primaryButton"> Sign In </a>
+        </div>
+      </form>
+
+      <div class="pb-7 pt-10 px-6">
+        <div class="border-t border-dashed flex justify-center items-center">
+          <p
+            class="text-sm font-semibold text-center -mt-[11px] bg-white w-fit px-3 text-g60"
+          >
+            Or Continue With
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 px-6">
+        <div
+          class="flex justify-center items-center gap-3 p-4 rounded-full bg-g20 border border-g30 cursor-pointer"
+        >
+          <img src="./assets/images/google.png" alt="" />
+          <p class="text-sm font-semibold text-g60">Continue with Google</p>
+        </div>
+        <div
+          class="flex justify-center items-center gap-3 p-4 rounded-full bg-g20 border border-g30 cursor-pointer"
+        >
+          <img src="./assets/images/apple.png" alt="" />
+          <p class="text-sm font-semibold text-g60">Continue with Apple</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

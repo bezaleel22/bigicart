@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Payment Methods - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen">
+      <!-- Top Area Start -->
+      <div class="flex justify-between items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./account-settings.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">Payment Method</div>
+        <a href="./select-payment-methods.html"
+          ><i class="ph ph-plus text-g60 text-2xl"></i
+        ></a>
+      </div>
+      <!-- Top Area End -->
+
+      <!-- Payment Methods list Start -->
+      <div class="px-4 pt-8 flex justify-start items-start flex-col gap-4">
+        <div
+          class="p-4 border border-g30 rounded-xl flex justify-between items-center w-full"
+        >
+          <div class="flex justify-start items-center gap-3">
+            <div
+              class="bg-white size-8 rounded-full flex justify-center items-center shadow-3"
+            >
+              <img src="./assets/images/payoneer.png" alt="" />
+            </div>
+            <p class="text-sm font-medium text-g60">Payoneer</p>
+          </div>
+          <p class="text-sm text-g50">Connected</p>
+        </div>
+        <div
+          class="p-4 border border-g30 rounded-xl flex justify-between items-center w-full"
+        >
+          <div class="flex justify-start items-center gap-3">
+            <div
+              class="bg-white size-8 rounded-full flex justify-center items-center shadow-3"
+            >
+              <img src="./assets/images/paypal.png" alt="" />
+            </div>
+            <p class="text-sm font-medium text-g60">Paypal</p>
+          </div>
+          <p class="text-sm text-g50">Connected</p>
+        </div>
+        <div
+          class="p-4 border border-g30 rounded-xl flex justify-between items-center w-full"
+        >
+          <div class="flex justify-start items-center gap-3">
+            <div
+              class="bg-white size-8 rounded-full flex justify-center items-center shadow-3"
+            >
+              <img src="./assets/images/bank.png" alt="" />
+            </div>
+            <p class="text-sm font-medium text-g60">Bank</p>
+          </div>
+          <p class="text-sm text-g50">Connected</p>
+        </div>
+        <div
+          class="p-4 border border-g30 rounded-xl flex justify-between items-center w-full"
+        >
+          <div class="flex justify-start items-center gap-3">
+            <div
+              class="bg-white size-8 rounded-full flex justify-center items-center shadow-3"
+            >
+              <img src="./assets/images/card.png" alt="" />
+            </div>
+            <p class="text-sm font-medium text-g60">Card</p>
+          </div>
+          <p class="text-sm text-g50">Connected</p>
+        </div>
+      </div>
+      <!-- Payment Methods list End -->
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Edit Profile - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen pb-6">
+      <!-- Top Area Start -->
+      <div class="flex justify-start items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./account-settings.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">Edit Profile</div>
+      </div>
+      <!-- Top Area End -->
+      <div class="pt-8 px-4 flex justify-center items-center">
+        <div class="relative">
+          <img
+            src="./assets/images/user-img.jpg"
+            alt=""
+            class="size-28 rounded-full"
+          />
+          <div
+            class="absolute right-0 bottom-2 p-1.5 rounded-md bg-g60 text-white flex justify-center items-center"
+          >
+            <i class="ph ph-pencil-simple-line"></i>
+          </div>
+        </div>
+      </div>
+      <form class="pt-8 flex flex-col gap-4 px-6">
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">First Name</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="First Name"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Last Name</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Email</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Enter Email"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Date of Birth</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="date"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Enter Email"
+            />
+          </div>
+        </div>
+
+        <div class="w-full">
+          <a href="./sign-in.html" class="primaryButton"> Save </a>
+        </div>
+      </form>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

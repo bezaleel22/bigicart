@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Language - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen">
+      <!-- Top Area Start -->
+      <div class="flex justify-start items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./account-settings.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">Language</div>
+      </div>
+      <!-- Top Area End -->
+
+      <div
+        class="border border-g30 p-4 rounded-xl bg-g20 mx-4 mt-8 text-g60 font-medium text-sm"
+      >
+        <p class="text-g50">Suggested</p>
+        <div class="pt-4 suggestedLanguage radioItems">
+          <div
+            class="flex justify-between items-center item active border-b border-dashed border-g30 pb-3"
+          >
+            <p class="">English (US)</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center item pt-3">
+            <p class="">English (UK)</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border border-g30 p-4 rounded-xl mx-4 mt-8 text-g60 font-medium text-sm"
+      >
+        <p class="text-g50">Language</p>
+        <div class="pt-4 otherLanguage radioItems">
+          <div
+            class="flex justify-between items-center item border-b border-dashed border-g30 pb-3"
+          >
+            <p class="">Brazil</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center item border-b border-dashed border-g30 py-3"
+          >
+            <p class="">Arabic</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center item active border-b border-dashed border-g30 py-3"
+          >
+            <p class="">Spanish</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center item border-b border-dashed border-g30 py-3"
+          >
+            <p class="">Chinese</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center item border-b border-dashed border-g30 py-3"
+          >
+            <p class="">Bangla</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center item pt-3">
+            <p class="">India</p>
+            <div class="rounded-full duration-500 circle-outer">
+              <div class="size-3 rounded-full duration-500 circle-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

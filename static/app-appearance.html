@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>App Appearance - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen">
+      <!-- Top Area Start -->
+      <div class="flex justify-start items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./account-settings.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">App Apprearance</div>
+      </div>
+      <!-- Top Area End -->
+
+      <div
+        class="border border-xl p-4 mx-4 mt-8 flex justify-between items-center rounded-xl"
+      >
+        <div class="flex justify-between items-center py-4 w-full">
+          <p class="text-sm font-medium text-g60">Dark Mode</p>
+          <div class="rounded-switch active">
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

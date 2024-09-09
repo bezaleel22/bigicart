@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Manage Address - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen">
+      <!-- Top Area Start -->
+      <div class="flex justify-between items-center gap-4 px-4 w-full pt-6">
+        <a
+          href="./account-settings.html"
+          class="cursor-pointer rounded-full border border-g60 !leading-none size-8 flex justify-center items-center"
+        >
+          <i class="ph ph-caret-left text-g60 text-xl"></i>
+        </a>
+        <div class="text-2xl font-bold text-g60">Manage Address</div>
+        <a href="./add-new-address.html"
+          ><i class="ph ph-plus text-g60 text-2xl"></i
+        ></a>
+      </div>
+      <!-- Top Area End -->
+
+      <!-- Address List Start -->
+      <div class="flex flex-col gap-4 px-4 pt-8">
+        <div class="border border-g30 rounded-xl p-4">
+          <div
+            class="flex justify-between items-center border-b border-dashed border-g30 pb-3"
+          >
+            <div class="flex justify-start items-center gap-2">
+              <p class="text-sm font-medium text-g60">Hilda Cobb</p>
+              <p
+                class="text-xs text-g50 py-0.5 px-1 bg-g20 border border-g30 rounded-md"
+              >
+                Main Address
+              </p>
+            </div>
+            <button>
+              <i class="ph ph-share-network text-g60 text-xl"></i>
+            </button>
+          </div>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-3"
+          >
+            <i class="ph ph-map-pin"></i>701 7th Ave. New York, NY 10036, USA
+          </p>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-2"
+          >
+            <i class="ph ph-phone"></i>(+1111 467 378 399)
+          </p>
+
+          <div class="pt-3">
+            <button class="primaryButtonOutline w-full !bg-white !py-2">
+              Change Address
+            </button>
+          </div>
+        </div>
+        <div class="border border-g30 rounded-xl p-4">
+          <div
+            class="flex justify-between items-center border-b border-dashed border-g30 pb-3"
+          >
+            <div class="flex justify-start items-center gap-2">
+              <p class="text-sm font-medium text-g60">Myrtle Pearson</p>
+            </div>
+            <button>
+              <i class="ph ph-share-network text-g60 text-xl"></i>
+            </button>
+          </div>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-3"
+          >
+            <i class="ph ph-map-pin"></i>Central Park, New York, NY 10022, USA
+          </p>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-2"
+          >
+            <i class="ph ph-phone"></i>(+1111 467 378 399)
+          </p>
+
+          <div class="pt-3 flex justify-between items-center gap-3 relative">
+            <button class="primaryButtonOutline w-full !bg-white !py-2">
+              Change Address
+            </button>
+            <div class="relative addressModal">
+              <button class="primaryButtonOutline w-12 !bg-white !py-1.5">
+                <i class="ph-bold ph-dots-three-vertical text-lg"></i>
+              </button>
+
+              <div
+                class="absolute top-16 right-0 bg-white p-4 rounded-xl shadow-2 addressModalBox modalClose duration-500 w-[200px]"
+              >
+                <div
+                  class="flex justify-start items-center gap-2 border-b border-dashed border-g30 pb-3"
+                >
+                  <i class="ph ph-pencil-simple-line"></i>
+                  <p class="text-xs text-g60">Set As Primary Address</p>
+                </div>
+                <div
+                  class="flex justify-start items-center gap-2 pt-3 text-g50"
+                >
+                  <i class="ph ph-trash"></i>
+                  <p class="text-xs">Remove Address</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border border-g30 rounded-xl p-4">
+          <div
+            class="flex justify-between items-center border-b border-dashed border-g30 pb-3"
+          >
+            <div class="flex justify-start items-center gap-2">
+              <p class="text-sm font-medium text-g60">Lucas Reeves</p>
+            </div>
+            <button>
+              <i class="ph ph-share-network text-g60 text-xl"></i>
+            </button>
+          </div>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-3"
+          >
+            <i class="ph ph-map-pin"></i>Liberty Island, New York, NY 10004, USA
+          </p>
+          <p
+            class="flex justify-start items-center gap-1 text-g50 text-xs pt-2"
+          >
+            <i class="ph ph-phone"></i>(+1111 467 378 399)
+          </p>
+
+          <div class="pt-3 flex justify-between items-center gap-3 relative">
+            <button class="primaryButtonOutline w-full !bg-white !py-2">
+              Change Address
+            </button>
+            <div class="relative addressModal2">
+              <button class="primaryButtonOutline w-12 !bg-white !py-1.5">
+                <i class="ph-bold ph-dots-three-vertical text-lg"></i>
+              </button>
+
+              <div
+                class="absolute top-16 right-0 bg-white p-4 rounded-xl shadow-2 addressModalBox2 modalClose duration-500 w-[200px]"
+              >
+                <div
+                  class="flex justify-start items-center gap-2 border-b border-dashed border-g30 pb-3"
+                >
+                  <i class="ph ph-pencil-simple-line"></i>
+                  <p class="text-xs text-g60">Set As Primary Address</p>
+                </div>
+                <div
+                  class="flex justify-start items-center gap-2 pt-3 text-g50"
+                >
+                  <i class="ph ph-trash"></i>
+                  <p class="text-xs">Remove Address</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Address List End -->
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

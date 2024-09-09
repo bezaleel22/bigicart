@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Sign Up - HTML PWA Mobile App</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container bg-white min-h-screen pb-8">
+      <div class="text-center pt-8 px-6">
+        <h1 class="heading-1 font-semibold text-g60">Create an Account</h1>
+        <p class="text-sm text-g50 pt-3">
+          Stay connected, follow teams, and never miss thrilling Stay connected
+        </p>
+      </div>
+
+      <form class="pt-8 flex flex-col gap-4 px-6">
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">First Name</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="First Name"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Last Name</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Email</p>
+          <div class="p-4 rounded-xl bg-g20 border border-g30">
+            <input
+              type="text"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm"
+              placeholder="Enter Email"
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Password</p>
+          <div
+            class="p-4 rounded-xl bg-g20 border border-g30 flex justify-between items-center"
+          >
+            <input
+              type="password"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm passwordField w-full pr-3"
+              placeholder="******"
+            />
+            <p class="">
+              <i class="ph ph-eye-closed text-g60 passowordShow"></i>
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <p class="text-g60 font-semibold text-sm pb-2">Confirm Password</p>
+          <div
+            class="p-4 rounded-xl bg-g20 border border-g30 flex justify-between items-center"
+          >
+            <input
+              type="password"
+              class="bg-transparent placeholder:text-g50 text-g60 outline-none text-sm placeholder:text-sm passwordField w-full pr-3 confirmPasswordField"
+              placeholder="******"
+            />
+            <p class="">
+              <i class="ph ph-eye-closed text-g60 confirmPasswordShow"></i>
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-end items-end gap-1 text-sm">
+          <p>Have an account?</p>
+          <a href="./sign-in.html" class="underline">Sign In</a>
+        </div>
+        <div class="w-full">
+          <a href="./sign-in.html" class="primaryButton"> Sign Up </a>
+        </div>
+      </form>
+
+      <div class="pb-7 pt-10 px-6">
+        <div class="border-t border-dashed flex justify-center items-center">
+          <p
+            class="text-sm font-semibold text-center -mt-[11px] bg-white w-fit px-3 text-g60"
+          >
+            Or Continue With
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 px-6">
+        <div
+          class="flex justify-center items-center gap-3 p-4 rounded-full bg-g20 border border-g30 cursor-pointer"
+        >
+          <img src="./assets/images/google.png" alt="" />
+          <p class="text-sm font-semibold text-g60">Continue with Google</p>
+        </div>
+        <div
+          class="flex justify-center items-center gap-3 p-4 rounded-full bg-g20 border border-g30 cursor-pointer"
+        >
+          <img src="./assets/images/apple.png" alt="" />
+          <p class="text-sm font-semibold text-g60">Continue with Apple</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
